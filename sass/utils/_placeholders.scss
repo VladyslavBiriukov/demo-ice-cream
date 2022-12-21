@@ -1,0 +1,27 @@
+%section {
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
+}
+
+%card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+}
+
+%card-set__item {
+    position: relative;
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
+    background-color: var(--primary-white-color);
+}
+
+%link {
+    text-decoration: none;
+    display: block;
+    color: currentColor;
+}

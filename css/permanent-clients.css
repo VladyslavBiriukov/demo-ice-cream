@@ -1,0 +1,26 @@
+.permanent-clients__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 170px;
+  height: 92px;
+  color: rgb(175, 177, 184);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  -webkit-transition: color var(--animation-function), border-color var(--animation-function);
+  transition: color var(--animation-function), border-color var(--animation-function);
+}
+.permanent-clients__link:hover, .permanent-clients__link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.permanent-clients__icon {
+  fill: currentColor;
+}/*# sourceMappingURL=permanent-clients.css.map */

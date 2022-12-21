@@ -1,0 +1,15 @@
+.agreement {
+    font-size: 12px;
+    line-height: calc( 14 / 12);
+    user-select: none;
+
+    @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc( 24 / 14 );
+    }
+}
+
+.agreement__link {
+    color: var(--accent-color);
+    text-underline-offset: 2px;
+}
