@@ -43,7 +43,7 @@
     visibility: hidden;
 
     width: 280px;
-    padding: 28px;
+    padding: 20px;
 
     position: fixed;
     top: 50%;
@@ -195,12 +195,36 @@
     }
 }
 
-.modal__iteam {
+.modal-table {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.modal-table__row {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-}
 
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 176%;
+        letter-spacing: 0.04em;
+   
+    &:not(:last-child) {
+        padding-bottom: 11px;
+    }
+}
+.modal__ingredients {
+    margin-bottom: 24px;
+    
+    color: #131313;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+}
 a {
     padding: 20px;
     display: inline-block;
@@ -210,3 +234,22 @@ a {
     color: #fff;
     border-radius: 3px;
 }
+.div {
+    width: 132px;
+    height: 132px;
+    background-color: #84A178;
+}
+.ice-cream {
+    display: block;
+    width: 132px;
+    height: 132px;
+    margin: 0 auto;
+
+    background-color: #9CBE8F;
+    
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/modal-icecream/ice_small@1x.png);
+}
+
