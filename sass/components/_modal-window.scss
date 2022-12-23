@@ -195,7 +195,11 @@
     }
 }
 
-
+.modal__iteam {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
 
 a {
     padding: 20px;
@@ -205,9 +209,4 @@ a {
     margin: 10px;
     color: #fff;
     border-radius: 3px;
-}
-.modal__iteam {
-display: flex;
-justify-content: space-between;
-margin-top: 20px;
 }
