@@ -504,8 +504,10 @@ a {
 
 .modal-grams__inner {
   position: absolute;
-  top: -1px;
-  left: 6%;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(7%, -1%);
+          transform: translate(7%, -1%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
