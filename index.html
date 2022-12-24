@@ -38,19 +38,32 @@
 <svg class="modal__cross js-modal-close" width="11" height="11">
   <use href="./images/svg/sprites.svg#icon-cross"></use>
 </svg>
-    <b class="modal__title">Buy now</b>
+    <b class="modal__title modal__title--position">Buy now</b>
 
     <form class="modal-form" name="modal_form" autocomplete="off">
-      <div>
-        <ul>
-          <li>
-            <input type="checkbox" id="myCheckbox1" />
-            <label for="myCheckbox1"><img
-                src="http://townandcountryremovals.com/wp-content/uploads/2013/10/firefox-logo-200x200.png" /></label>
+        <ul class="div-list">
+          <li class="div-item">
+      <input class="div-checkbox" type="checkbox" id="div-box1">
+      <label class="div-label" for="div-box1">
+              <p class="div-text">ice-cream</p>
+            <div class="div-img"></div>
+            </label>
           </li>
-          <li>
+          <li class="div-item">
+    <input class="div-checkbox" type="checkbox" id="div-box2">
+      <label class="div-label div-label--second" for="div-box2">
+              <p class="div-text">ice-cream</p>
+            <div class="div-img div-img--second"></div>
+            </label>
+          </li>
+          <li class="div-item">
+    <input class="div-checkbox" type="checkbox" id="div-box3">
+      <label class="div-label div-label--third" for="div-box3">
+              <p class="div-text">ice-cream</p>
+            <div class="div-img div-img--third" ></div>
+            </label>
+          </li>
         </ul>
-      </div>
     <div class="modal-form__wrapper">
         <label class="modal-form__label">
           <input class="modal-form__field" type="text" name="user_name" placeholder="Name" autocomplete="name" minlength="3" required>

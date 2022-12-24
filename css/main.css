@@ -229,6 +229,9 @@ ul {
   font-size: 16px;
   line-height: 1.5;
 }
+.modal__title--position {
+  margin-bottom: 83px;
+}
 @media screen and (min-width: 768px) {
   .modal__title {
     width: 100%;
@@ -537,4 +540,95 @@ a {
   color: #131313;
   font-size: 10px;
   line-height: 1.2;
+}
+
+.div-label {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  width: 132px;
+  height: 136px;
+  border: 2px solid #96AF8C;
+  -webkit-filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+          filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+  border-radius: 15px;
+}
+.div-label--second {
+  border: 2px solid #EFD478;
+}
+.div-label--third {
+  border: 2px solid #D6936D;
+}
+
+.div-img {
+  position: absolute;
+  top: -50%;
+  left: -1%;
+  display: block;
+  width: 132px;
+  height: 132px;
+  background-image: url(../images/modal-buy/_buy@1x.png);
+}
+.div-img::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -10px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background: #9CBE8F;
+  -webkit-box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+          box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+.div-img--second {
+  background-image: url(../images/modal-buy/img_buy-2@1x.png);
+}
+.div-img--second::before {
+  background: rgba(248, 210, 78, 0.7);
+  -webkit-box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+          box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+.div-img--third {
+  background-image: url(../images/modal-buy/img_buy3@1x.png);
+}
+.div-img--third::before {
+  background: rgba(213, 117, 63, 0.7);
+  -webkit-box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+
+.div-text {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #131313;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.div-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 82px;
+  margin-bottom: 31px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .div-list {
+    gap: 32px;
+  }
 }/*# sourceMappingURL=main.css.map */
