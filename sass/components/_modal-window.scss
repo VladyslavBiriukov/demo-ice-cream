@@ -47,7 +47,6 @@
     visibility: hidden;
 
     width: 280px;
-    height: 100%;
     padding: 20px;
 
     transform: translate(-50%, -50%);
@@ -60,6 +59,10 @@
     overflow-y: scroll;
 
     transition: 0.3s all;
+
+    &--icecream {
+    height: 100%;
+    }
 
     @media screen and (min-width: 768px) {
         width: 568px;
@@ -90,10 +93,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: calc(24 / 16);
-
-    &--position {
-        margin-bottom: 83px;
-    }
 
     @media screen and (min-width: 768px) {
             width: 100%;
@@ -305,7 +304,7 @@ a {
     display: flex;
     flex-direction: column-reverse;
     justify-content: end;
-    width: 53px;
+    min-width: 53px;
     height: 72px;
 
     border: 2px solid #9CBE8F;
@@ -351,7 +350,44 @@ a {
     font-size: 10px;
     line-height: calc(12 / 10);
 }
-.div-label {
+
+
+
+
+.modal__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 82px;
+    margin-bottom: 31px;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        gap: 32px;
+    }
+}
+
+.modal__item {
+    margin-top: 64px;
+}
+
+.modal__checkbox {
+    display: none;
+}
+
+.modal__checkbox:checked+.modal__label,
+.modal__checkbox:focus+.modal__label {
+    transition: background-color var(--animation-function);
+    background-color: #AEC6A5;
+
+    &--second {
+        background-color: #F8D24E;
+    }
+
+    &--third {
+        background-color: #D6936D;
+    }
+}
+.modal__label {
     position: relative;
 
     display: flex;
@@ -371,15 +407,14 @@ a {
        }
 }
 
-.div-img {
+.modal__img {
     position: absolute;
     top: -50%;
     left: -1%;
     display: block;
     width: 132px;
     height: 132px;
-    background-image: url(../images/modal-buy/_buy@1x.png);
-
+    background-image: url(../images/modal-buy/1_small@1x.png);
     &::before {
             content: "";
             position: absolute;
@@ -391,19 +426,19 @@ a {
             width: 100%;
     
             border-radius: 50%;
-            background: #9CBE8F;
+            background: rgba(156, 190, 143, 0.7);
             box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
         }
 
         &--second {
-        background-image: url(../images/modal-buy/img_buy-2@1x.png);
+        background-image: url(../images/modal-buy/2_small@1x.png);
         }
         &--second::before {
         background: rgba(248, 210, 78, 0.7);
         box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
         }
         &--third {
-            background-image: url(../images/modal-buy/img_buy3@1x.png);
+            background-image: url(../images/modal-buy/3_small@1x.png);
         }
         &--third::before {
         background: rgba(213, 117, 63, 0.7);
@@ -412,7 +447,7 @@ a {
 }
 
 
-.div-text {
+.modal__text {
     margin-bottom: 20px;
     text-align: center;
 
@@ -425,14 +460,7 @@ a {
     text-transform: uppercase;  
 }
 
-.div-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 82px;
-    margin-bottom: 31px;
-    justify-content: center;
 
-    @media screen and (min-width: 768px) {
-        gap: 32px;
-    }
-}
+
+
+

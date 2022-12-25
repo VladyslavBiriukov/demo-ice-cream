@@ -186,7 +186,6 @@ ul {
   opacity: 0;
   visibility: hidden;
   width: 280px;
-  height: 100%;
   padding: 20px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -198,6 +197,9 @@ ul {
   overflow-y: scroll;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+}
+.modal--icecream {
+  height: 100%;
 }
 @media screen and (min-width: 768px) {
   .modal {
@@ -228,9 +230,6 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-}
-.modal__title--position {
-  margin-bottom: 83px;
 }
 @media screen and (min-width: 768px) {
   .modal__title {
@@ -494,7 +493,7 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  width: 53px;
+  min-width: 53px;
   height: 72px;
   border: 2px solid #9CBE8F;
   border-radius: 40px;
@@ -542,7 +541,48 @@ a {
   line-height: 1.2;
 }
 
-.div-label {
+.modal__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 82px;
+  margin-bottom: 31px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .modal__list {
+    gap: 32px;
+  }
+}
+
+.modal__item {
+  margin-top: 64px;
+}
+
+.modal__checkbox {
+  display: none;
+}
+
+.modal__checkbox:checked + .modal__label,
+.modal__checkbox:focus + .modal__label {
+  -webkit-transition: background-color var(--animation-function);
+  transition: background-color var(--animation-function);
+  background-color: #AEC6A5;
+}
+.modal__checkbox:checked + .modal__label--second,
+.modal__checkbox:focus + .modal__label--second {
+  background-color: #F8D24E;
+}
+.modal__checkbox:checked + .modal__label--third,
+.modal__checkbox:focus + .modal__label--third {
+  background-color: #D6936D;
+}
+
+.modal__label {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -558,23 +598,23 @@ a {
           filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 15px;
 }
-.div-label--second {
+.modal__label--second {
   border: 2px solid #EFD478;
 }
-.div-label--third {
+.modal__label--third {
   border: 2px solid #D6936D;
 }
 
-.div-img {
+.modal__img {
   position: absolute;
   top: -50%;
   left: -1%;
   display: block;
   width: 132px;
   height: 132px;
-  background-image: url(../images/modal-buy/_buy@1x.png);
+  background-image: url(../images/modal-buy/1_small@1x.png);
 }
-.div-img::before {
+.modal__img::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -583,28 +623,28 @@ a {
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  background: #9CBE8F;
+  background: rgba(156, 190, 143, 0.7);
   -webkit-box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
           box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
-.div-img--second {
-  background-image: url(../images/modal-buy/img_buy-2@1x.png);
+.modal__img--second {
+  background-image: url(../images/modal-buy/2_small@1x.png);
 }
-.div-img--second::before {
+.modal__img--second::before {
   background: rgba(248, 210, 78, 0.7);
   -webkit-box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
           box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
 }
-.div-img--third {
-  background-image: url(../images/modal-buy/img_buy3@1x.png);
+.modal__img--third {
+  background-image: url(../images/modal-buy/3_small@1x.png);
 }
-.div-img--third::before {
+.modal__img--third::before {
   background: rgba(213, 117, 63, 0.7);
   -webkit-box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
 }
 
-.div-text {
+.modal__text {
   margin-bottom: 20px;
   text-align: center;
   color: #131313;
@@ -613,22 +653,4 @@ a {
   line-height: 1.25;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-}
-
-.div-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 82px;
-  margin-bottom: 31px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-@media screen and (min-width: 768px) {
-  .div-list {
-    gap: 32px;
-  }
 }/*# sourceMappingURL=main.css.map */
