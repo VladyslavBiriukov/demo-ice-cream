@@ -363,6 +363,9 @@ ul {
 .modal-form__button:focus {
   color: white;
 }
+.modal-form__button:disabled {
+  background-color: rgba(248, 210, 78, 0.5);
+}
 
 .modal__list {
   display: -webkit-box;

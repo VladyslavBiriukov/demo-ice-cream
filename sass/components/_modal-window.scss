@@ -168,6 +168,9 @@
     &:focus {
         color: white;
     }
+    &:disabled {
+        background-color: rgba(248, 210, 78, 0.5);
+    }
 }
 
 // a {
@@ -202,8 +205,8 @@
     display: none;
 }
 
-.modal__checkbox:checked+.modal__label,
-.modal__checkbox:focus+.modal__label {
+.modal__checkbox:checked + .modal__label,
+.modal__checkbox:focus + .modal__label {
     transition: background-color var(--animation-function);
     background-color: #AEC6A5;
 
@@ -215,6 +218,7 @@
         background-color: #D6936D;
     }
 }
+
 .modal__label {
     position: relative;
 
